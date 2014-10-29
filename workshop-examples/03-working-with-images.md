@@ -1,4 +1,5 @@
-# Images
+# Workgin with images
+
 
 * `docker images` Available images on the host
 * `docker rmi IMAGE` Delete an image

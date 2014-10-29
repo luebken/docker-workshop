@@ -1,5 +1,6 @@
 # Running in containers
 
+
 ## Running a command in a container
 
 ```
@@ -16,6 +17,7 @@ Run a command in a new container
 ...
 ```
 
+
 ## Running an interactive command in a container
 
 ```
@@ -28,6 +30,7 @@ root@be9db7f93391:/# hostname
 be9db7f93391
 ```
 
+
 ## Starting a background container
 
 ```
@@ -37,6 +40,7 @@ $ docker ps
 CONTAINER ID        IMAGE                         COMMAND                CREATED             STATUS              PORTS               NAMES
 cf1417763eda        127.0.0.1:5000/ubuntu:14.04   "/bin/bash -c 'while   4 seconds ago       Up 4 seconds                            cocky_wilson
 ```
+
 
 ## Listing containers
 * `docker ps -a` List all containers
@@ -48,20 +52,24 @@ cf1417763eda        127.0.0.1:5000/ubuntu:14.04   "/bin/bash -c 'while   29 seco
 be9db7f93391        127.0.0.1:5000/ubuntu:14.04   "/bin/bash"            23 minutes ago      Exited (130) 17 minutes ago                        desperate_goldstine
 ```
 
+
 ## Stopping and restarting a container
 * `docker stop CONTAINER` Stop a container (SIGTERM)
 * `docker kill CONTAINER` Kill a container (SIGKILL)
 * `docker run --name mycontainer -i -t ubuntu /bin/bash` Naming the container
 * `docker start CONTAINER` Starting a stopped container by name or id
 
+
 ## Attaching
 * `docker attach CONTAINER` Attaching to a container
 * `Ctrl-p + Ctrl-q` Detach from a container
+
 
 ## Information about a container
 * `docker logs --follow mycontainer` Show and follow STDOUT and STDERR
 * `docker top mycontainer` Show running processes
 * `docker inspect mycontainer` More information about a container
+
 
 ## Remove a container
 * `docker rm CONTAINER` Remove a container

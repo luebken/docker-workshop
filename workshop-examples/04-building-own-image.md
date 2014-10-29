@@ -1,4 +1,7 @@
-# A Dockerfile
+# Building your own image
+
+
+## A Dockerfile
 ```
 FROM        ubuntu:14.04
 MAINTAINER  Matthias Luebken <matthias@giantswarm.io>
@@ -16,7 +19,8 @@ EXPOSE 80
 CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
 ```
 
-# Dockerfile instructions
+
+## Dockerfile instructions
 * `FROM` the parent image
 * `MAINTAINER` the maintainer of this Dockerfile (optional)
 * `RUN <command>` run the command during build time with '/bin/sh -c'

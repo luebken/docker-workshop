@@ -1,8 +1,10 @@
 # Installation
 
+
 ## Virtualbox image
 * Have https://www.virtualbox.org/ installed
-* Install and start the workshop VM: `docker-workshop_docker-workshop-vm_*.ova`
+* Install and start the workshop VM: 
+  `docker-workshop_docker-workshop-vm_*.ova`
 * Double Click or Virtual Box > File > Import Appliance ...
 * Login: `ssh -p 2200 demo@localhost` Password: demo
   ```
@@ -11,6 +13,7 @@
   Welcome to Ubuntu 14.04 LTS (GNU/Linux 3.13.0-24-generic x86_64)
   ...
   ```
+
 
 ## Check docker installation
 
@@ -27,6 +30,7 @@
   Go version (server): go1.3.3
   Git commit (server): c78088f
 ```
+
 
 * `docker info` Information about the Docker installation
 ```
@@ -49,6 +53,7 @@
   WARNING: No swap limit support
 ```
 
+
 * `docker help` Usage information
 ```
 $ docker help
@@ -69,6 +74,7 @@ Commands:
     create    Create a new container
 ...
 ```
+
 
 ## Check fig installation
 
@@ -98,6 +104,7 @@ Commands:
   logs      View output from containers
 ...
 ```
+
 
 ## Check local Docker registry
 
